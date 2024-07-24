@@ -7,7 +7,7 @@ with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Load the original dataframe for unique values
-data_df = pd.read_csv(r"C:\Users\ahmed\PycharmProjects\Africa_Financial_Inclusion\Financial_inclusion_dataset.csv")
+data_df = pd.read_csv(r"https://github.com/AhmedEltokhy5011/Streamlit_Africa_Financial_Inclusion/blob/main/Financial_inclusion_dataset.csv")
 
 # Load the encoded dataframe
 with open('df_encoded.pkl', 'rb') as file:
