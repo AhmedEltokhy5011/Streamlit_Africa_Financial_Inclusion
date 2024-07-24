@@ -1,5 +1,4 @@
 # Streamlit Africa Financial Inclusion Prediction
-Predict financial inclusion in African countries using a Random Forest model. The project includes data analysis, preprocessing, model training, and a Streamlit web app for predictions. Technologies: Python, Pandas, Scikit-Learn, Streamlit. Explore the interactive app to gain insights and make informed decisions.
 
 ### Project Overview
 This project aims to predict financial inclusion in African countries using a machine learning model. Financial inclusion, which refers to the access and use of financial services by individuals, is crucial for economic development. By leveraging data from various African countries, this project seeks to identify the factors influencing financial inclusion and predict whether an individual has a bank account.
