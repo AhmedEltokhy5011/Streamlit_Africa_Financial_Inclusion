@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load the dataset
-data_df = pd.read_csv(r"https://github.com/AhmedEltokhy5011/Streamlit_Africa_Financial_Inclusion")
+data_df = pd.read_csv(r"https://raw.githubusercontent.com/AhmedEltokhy5011/Streamlit_Africa_Financial_Inclusion/main/Financial_inclusion_dataset.csv")
 
 # Adjust display options
 pd.set_option('display.max_columns', None)
