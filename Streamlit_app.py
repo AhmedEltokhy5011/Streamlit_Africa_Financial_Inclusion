@@ -57,7 +57,7 @@ st.image(image_path, caption="Financial Inclusion")
 # Input fields
 country = st.selectbox("Country", df_encoded.columns[df_encoded.columns.str.startswith('country_')])
 location_type = st.selectbox("Location Type", df_encoded.columns[df_encoded.columns.str.startswith('location_type_')])
-cellphone_access = st.selectbox("Cellphone Access", df_encoded.columns[df_encoded.columns.str.startswith('cellphone_access_')])
+cellphone_access = st.selectbox("Cellphone Access", data_df['cellphone_access'].unique())
 household_size = st.number_input("Household Size", min_value=1, max_value=20, value=1)
 age_of_respondent = st.number_input("Age of Respondent", min_value=18, max_value=100, value=18)
 gender_of_respondent = st.selectbox("Gender of Respondent", df_encoded.columns[df_encoded.columns.str.startswith('gender_of_respondent_')])
