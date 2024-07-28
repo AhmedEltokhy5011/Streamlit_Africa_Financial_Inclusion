@@ -50,7 +50,7 @@ print(classification_report(y_test, y_pred))
 st.title("Africa Financial Inclusion Prediction")
 
 # Add the image
-image_path = r"C:\Users\ahmed\PycharmProjects\Africa_Financial_Inclusion\UNUZ4zR - Imgur.jpg"
+image_path = r"https://github.com/AhmedEltokhy5011/Streamlit_Africa_Financial_Inclusion/blob/main/UNUZ4zR%20-%20Imgur.jpg"
 st.image(image_path, caption="Financial Inclusion")
 
 # Input fields
