@@ -53,17 +53,19 @@ st.title("Africa Financial Inclusion Prediction")
 image_path = r"https://github.com/AhmedEltokhy5011/Streamlit_Africa_Financial_Inclusion/blob/main/UNUZ4zR%20-%20Imgur.jpg"
 st.image(image_path, caption="Financial Inclusion")
 
+
 # Input fields
-country = st.selectbox("Country", df_encoded['country'].unique())
-location_type = st.selectbox("Location Type", df_encoded['location_type'].unique())
-cellphone_access = st.selectbox("Cellphone Access", df_encoded['cellphone_access'].unique())
+country = st.selectbox("Country", df_encoded.columns[df_encoded.columns.str.startswith('country_')])
+location_type = st.selectbox("Location Type", df_encoded.columns[df_encoded.columns.str.startswith('location_type_')])
+cellphone_access = st.selectbox("Cellphone Access", df_encoded.columns[df_encoded.columns.str.startswith('cellphone_access_')])
 household_size = st.number_input("Household Size", min_value=1, max_value=20, value=1)
 age_of_respondent = st.number_input("Age of Respondent", min_value=18, max_value=100, value=18)
-gender_of_respondent = st.selectbox("Gender of Respondent", df_encoded['gender_of_respondent'].unique())
-relationship_with_head = st.selectbox("Relationship with Head", df_encoded['relationship_with_head'].unique())
-marital_status = st.selectbox("Marital Status", df_encoded['marital_status'].unique())
-education_level = st.selectbox("Education Level", df_encoded['education_level'].unique())
-job_type = st.selectbox("Job Type", df_encoded['job_type'].unique())
+gender_of_respondent = st.selectbox("Gender of Respondent", df_encoded.columns[df_encoded.columns.str.startswith('gender_of_respondent_')])
+relationship_with_head = st.selectbox("Relationship with Head", df_encoded.columns[df_encoded.columns.str.startswith('relationship_with_head_')])
+marital_status = st.selectbox("Marital Status", df_encoded.columns[df_encoded.columns.str.startswith('marital_status_')])
+education_level = st.selectbox("Education Level", df_encoded.columns[df_encoded.columns.str.startswith('education_level_')])
+job_type = st.selectbox("Job Type", df_encoded.columns[df_encoded.columns.str.startswith('job_type_')])
+
 
 # Prediction
 if st.button("Predict"):
